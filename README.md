@@ -93,11 +93,8 @@ The system sends the following data:
 ### Wokwi Circuit Diagram
 *Add your screenshot here*
 
-### Serial Monitor Output
-*Add your screenshot here*
+<img width="965" height="758" alt="image" src="https://github.com/user-attachments/assets/7cb2df14-564d-446b-a737-9899391b1261" />
 
-### ThingSpeak Dashboard
-*Add your screenshot here*
 
 ## 🎯 Results
 - ✅ Real-time temperature and humidity monitoring
