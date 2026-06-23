@@ -29,7 +29,7 @@ const char* password = "";
 // THINGSPEAK CONFIGURATION
 // ============================================================
 // ⚠️ REPLACE WITH YOUR ACTUAL THINGSPEAK VALUES ⚠️
-String apiKey = "YOUR_WRITE_API_KEY_HERE";   // From ThingSpeak → API Keys
+String apiKey = "M0NLFV03E7GV8O8C";   // From ThingSpeak → API Keys
 const char* thingSpeakURL = "http://api.thingspeak.com/update";
 
 // ============================================================
