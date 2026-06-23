@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "author": "Temperature Monitoring System",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -120,
+      "left": -200,
+      "attrs": {
+        "temperature": "25"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -60,
+      "left": -40,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -60,
+      "left": 60,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -20,
+      "left": -53,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -20,
+      "left": 47,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "dht1:GND", "black", ["v-84"]],
+    ["esp:3.3V", "dht1:VCC", "red", ["v-84"]],
+    ["esp:15", "dht1:SDA", "yellow", ["v-84"]],
+    ["esp:GND.1", "led1:C", "black", ["v-42.8"]],
+    ["esp:GND.1", "led2:C", "black", ["v-42.8"]],
+    ["esp:12", "r1:1", "green", ["v-42.8"]],
+    ["r1:2", "led1:A", "green", []],
+    ["esp:13", "r2:1", "red", ["v-42.8"]],
+    ["r2:2", "led2:A", "red", []]
+  ]
+}
